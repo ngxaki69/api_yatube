@@ -29,3 +29,10 @@ Yatube API предоставляет интерфейс для взаимоде
 * `PUT /api/v1/posts/{post_id}/comments/{comment_id}/`: Полностью обновить комментарий.
 * `PATCH /api/v1/posts/{post_id}/comments/{comment_id}/`: Частично обновить комментарий.
 * `DELETE /api/v1/posts/{post_id}/comments/{comment_id}/`: Удалить комментарий.
+
+### Запуск
+
+* **git clone https://github.com/your-username/yatube-api.git**
+* **pip install -r requirements.txt**
+* **python manage.py migrate**
+* **python manage.py runserver**

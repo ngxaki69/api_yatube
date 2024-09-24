@@ -2,9 +2,9 @@ from django.shortcuts import get_object_or_404
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 
+from .permissions import IsAuth
 from posts.models import Group, Post
 from .serializers import CommentSerializer, GroupSerializer, PostSerializer
-from .permissions import IsAuth
 
 
 class PostViewSet(viewsets.ModelViewSet):
